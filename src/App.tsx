@@ -1,8 +1,8 @@
 import Accordion from "./components/Accordion";
 import "./App.css";
-import womanOnlineDesktop from "../public/images/illustration-woman-online-desktop.svg";
-import womanOnlineMobile from "../public/images/illustration-woman-online-mobile.svg";
-import box from "../public/images/illustration-box-desktop.svg";
+import womanOnlineDesktop from "/images/illustration-woman-online-desktop.svg";
+import womanOnlineMobile from "/images/illustration-woman-online-mobile.svg";
+import box from "/images/illustration-box-desktop.svg";
 
 const App = () => {
   return (

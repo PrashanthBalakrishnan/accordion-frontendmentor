@@ -2,10 +2,12 @@
   background-color: white;
   max-width: 56rem;
   border-radius: 2rem;
+  margin: -30px 10px;
   background-image: url("../public/images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 15rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .app__box {
@@ -43,8 +45,8 @@
     margin: 0 auto;
     padding: 4.375rem 6.25rem 4.375rem 0;
     background-image: url("../public/images/bg-pattern-desktop.svg");
-    background-position: -13% center;
-    background-size: 45%;
+    background-position: -255% 69%;
+    background-size: 84%;
   }
 
   .app__box {
@@ -71,12 +73,13 @@
     position: relative;
     top: auto;
     left: auto;
-    max-width: 25rem;
+    max-width: 28rem;
     transform: translateX(-4rem);
   }
 
   .app__accordion {
     padding-top: 0;
+    margin-left: 20px;
   }
 
   .app__image--mobile {
