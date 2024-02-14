@@ -21,7 +21,7 @@ const Accordion = () => {
             <div className="accordion__questionContainer">
               <div className="accordion__question">
                 <button onClick={() => handleSingleSelection(dataItem.id)}>
-                  <h3
+                  <h2
                     className={
                       selected === dataItem.id
                         ? "accordion__question--bold"
@@ -29,7 +29,7 @@ const Accordion = () => {
                     }
                   >
                     {dataItem.question}
-                  </h3>
+                  </h2>
                 </button>
               </div>
               <img
