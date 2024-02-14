@@ -1,0 +1,85 @@
+.app {
+  background-color: white;
+  max-width: 56rem;
+  border-radius: 2rem;
+  background-image: url("../public/images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 15rem;
+}
+
+.app__box {
+  display: none;
+}
+
+.app__image {
+  position: relative;
+}
+.app__image--desktop {
+  display: none;
+}
+
+.app__image--mobile {
+  display: block;
+  position: absolute;
+  top: -6.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
+}
+
+.app__accordion {
+  padding-top: 7rem;
+}
+
+/* DESKTOP STYLES */
+
+@media (min-width: 65em) {
+  .app {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 4.375rem 6.25rem 4.375rem 0;
+    background-image: url("../public/images/bg-pattern-desktop.svg");
+    background-position: -13% center;
+    background-size: 45%;
+  }
+
+  .app__box {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 57%;
+    left: 0;
+    transform: translateX(-52%) translateY(-50%);
+  }
+  .app__image,
+  .app__accordion {
+    flex: 1;
+  }
+
+  .app__image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .app__image--desktop {
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 25rem;
+    transform: translateX(-4rem);
+  }
+
+  .app__accordion {
+    padding-top: 0;
+  }
+
+  .app__image--mobile {
+    display: none;
+  }
+}
