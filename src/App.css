@@ -3,11 +3,12 @@
   max-width: 56rem;
   border-radius: 2rem;
   margin: -30px 10px;
-  background-image: url("../public/images/bg-pattern-mobile.svg");
+  background-image: url("/images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 15rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 581px;
 }
 
 .app__box {
@@ -44,9 +45,10 @@
     display: flex;
     margin: 0 auto;
     padding: 4.375rem 6.25rem 4.375rem 0;
-    background-image: url("../public/images/bg-pattern-desktop.svg");
+    background-image: url("/images/bg-pattern-desktop.svg");
     background-position: -255% 69%;
     background-size: 84%;
+    height: 606px;
   }
 
   .app__box {

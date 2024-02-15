@@ -23,6 +23,7 @@
 .accordion__questionContainer {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .accordion__arrow {
@@ -35,7 +36,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.accordion__question button {
+.accordion__container button {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -44,7 +45,7 @@
   font-size: 14px;
 }
 
-.accordion__question button:hover {
+.accordion__container button:hover {
   cursor: pointer;
   color: var(--text-red);
 }
@@ -64,9 +65,7 @@
 .accordion__question--bold {
   font-weight: bold;
 }
-.accordion__question--normal {
-  font-weight: normal;
-}
+
 /* DESKTOP STYLES */
 
 @media (min-width: 65em) {

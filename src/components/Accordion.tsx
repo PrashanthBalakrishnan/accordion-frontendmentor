@@ -18,19 +18,18 @@ const Accordion = () => {
       {data.map((dataItem) => (
         <div className="accordion__item" key={dataItem.id}>
           <div className="accordion__container">
-            <div className="accordion__questionContainer">
+            <button
+              className="accordion__questionContainer"
+              onClick={() => handleSingleSelection(dataItem.id)}
+            >
               <div className="accordion__question">
-                <button onClick={() => handleSingleSelection(dataItem.id)}>
-                  <h2
-                    className={
-                      selected === dataItem.id
-                        ? "accordion__question--bold"
-                        : "accordion__question--normal"
-                    }
-                  >
-                    {dataItem.question}
-                  </h2>
-                </button>
+                <p
+                  className={
+                    selected === dataItem.id ? "accordion__question--bold" : ""
+                  }
+                >
+                  {dataItem.question}
+                </p>
               </div>
               <img
                 src={arrow}
@@ -41,7 +40,7 @@ const Accordion = () => {
                     : "accordion__arrow"
                 }
               />
-            </div>
+            </button>
 
             <p
               className={`accordion__answer ${
